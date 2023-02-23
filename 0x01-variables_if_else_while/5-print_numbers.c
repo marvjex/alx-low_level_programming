@@ -1,4 +1,5 @@
 #include <stdio.h>
+/* betty documentation type */
 /**
  * A program prints single digit numbers o base 10
  * main - This is the entry point of the program
