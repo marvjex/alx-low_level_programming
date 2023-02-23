@@ -3,7 +3,7 @@
 /**
  * main - A c program that prints a line to the standard error using print f
  * Return 1 (success)
- * main - Enry point
+ * main - Entry point, here is wher the program begins
  */
 int main(void)
 {
