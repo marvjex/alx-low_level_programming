@@ -1,16 +1,18 @@
 #include <stdio.h>
 /**
- * main - This is the entry point of the program
- * Returns: 0 (succeed)
+ * main - returns alphabetical letters both except q and e
+ * Returns: Always 0 (success)
  */
 int main(void)
 {
-for (char c  = 'a'; c  <= 'z'; c++)
+char ch  = 'a';
+while (ch <= 'z'
 {
-if (c != 'q' && c != 'e')
+if ((ch != 'e') && (ch != 'q'))
 {
-putchar(c);
+putchar(ch);
 }
+ch++;
 }
 putchar('\n');
 return (0);
