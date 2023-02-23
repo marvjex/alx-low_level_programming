@@ -1,14 +1,12 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * A program that prints alphabets -q and -e
  * Returns: 0 always (succeed)
  */
 int main(void)
 {
 char a;
-char c;
-for (a = 'a'; a <= 'z'; c++)
+for (a = 'a'; a <= 'z'; a++)
 {
 if (a == 'q' || a == 'e')
 {
