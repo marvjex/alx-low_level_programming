@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * A program prints single digit numbers o base 10
- * main - Entry point
+ * main - This is the entry point of the program
  * Return: 0 always (succedded)
  */
 int main(void)
