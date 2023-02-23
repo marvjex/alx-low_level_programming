@@ -11,15 +11,13 @@ char d;
 
 c = 'a';
 d = 'A';
-while (c <= 'z')
+for (c = 'a'; c <= 'z'; c++)
 {
 putchar(c);
-c++;
 }
-while (d <= 'Z')
+for (d = 'A'; d <= 'Z'; d++)
 {
-putchar(c);
-d++;
+putchar(d);
 }
 putchar('\n');
 return (0);
