@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - prints alphabets using putchar function
+ * main - This is the entry point of the program
  * Returns: 0 (succeed)
  */
 int main(void)
