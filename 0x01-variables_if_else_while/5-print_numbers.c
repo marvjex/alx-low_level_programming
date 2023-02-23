@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * A program prints single digits
+ * A program prints single digit numbers o base 10
  * main - Entry point
  * Return: 0 always (succedded)
  */

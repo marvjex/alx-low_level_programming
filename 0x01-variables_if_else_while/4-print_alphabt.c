@@ -1,18 +1,16 @@
 #include <stdio.h>
 /**
- * main - Entry point
- * Returns: 0 always (succeed)
+ * main - prints alphabets using putchar function
+ * Returns: 0 (succeed)
  */
 int main(void)
 {
-char a;
-for (a = 'a'; a <= 'z'; a++)
+for (char c  = 'a'; c  <= 'z'; c++)
 {
-if (a == 'q' || a == 'e')
+if (c != 'q' && c != 'e')
 {
-continue;
+putchar(c);
 }
-putchar(a);
 }
 putchar('\n');
 return (0);
