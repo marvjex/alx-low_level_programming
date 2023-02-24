@@ -1,18 +1,21 @@
 #include <stdio.h>
 /**
- * main - returns alphabetical letters both except q and e
- * Returns: Always 0 (success)
- */
+  * main - Entry point of the program
+  * Description 'returns alphabetical letters both except q and e'
+  * Returns: Always 0
+  */
 int main(void)
 {
-char ch  = 'a';
-while (ch <= 'z'
+int c = 97;
+while (c <= 122)
 {
-if ((ch != 'e') && (ch != 'q'))
+if (c == 101 || c == 113)
 {
-putchar(ch);
+c++;
+continue;
 }
-ch++;
+putchar(c);
+c++;
 }
 putchar('\n');
 return (0);
