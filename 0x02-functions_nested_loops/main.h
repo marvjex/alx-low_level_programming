@@ -11,7 +11,7 @@
 9 void jack _bauer(void);
 10 void times_table(void);
 11 int add(int,int);
-12  void print_to_98(int n);
+12 void print_to_98(int n);
 
 
 #enfif
