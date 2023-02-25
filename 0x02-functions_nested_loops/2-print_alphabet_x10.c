@@ -2,21 +2,21 @@
 /**
   *print_alphabet_x10 - prints the alphabet 10 times'
   *
-  *Return: Always 0 (success)
+  *Return: void
   */
 void print_alphabet_x10(void)
 {
-int i;
-int j;
+    char c;
+    int i;
 
-for (j >= 1; i <= 10; i++)
-{
-for (j = 97; j <= 122; j++)
-{
-_putchar(j);
+    for (i = 0; i < 10; i++)
+    {
+        c = 'a';
+        while (c <= 'z')
+        {
+            _putchar(c);
+            c++;
+        }
+        _putchar('\n');
+    }
 }
-_putchar('\n');
-}
-}
-
-
