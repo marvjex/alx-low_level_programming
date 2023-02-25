@@ -1,17 +1,13 @@
-#include "main"
+#include "main.h"
 /**
-  *main - Entry point
-  *Description:'computes the absolute value of an integer 10'
-  *Return: return absolute value
+  * _abs - 'computes the absolute value of an integer 10'
+  * @n: The integer to compute the absolute value of.
+  * Return: The absolute value of the integer.
   */
-int _abs(int i)
-		{
-		if (i >= 0)
-		{
-		return (i);
-		}
-		else 
-		{
-		return (i * -1);
-		}
-		}
+int _abs(int n)
+{
+    if (n < 0)
+        return (-n);
+    else
+        return (n);
+}
