@@ -1,22 +1,13 @@
-#include " main.h"
+#include "main.h"
 /**
-  *main - Entry point
-  *Description:'checks for alphabetic character.'
-  *shows 1 if one of the input is a
-  *@c:The character in ASCII code
-  *Return: Always 0 (success)
+  * _isalpha - 'checks for alphabetic character.'
+  * @c: the character to be checked
+  * Return: 1 if c is a letter (lowercase or uppercase), 0 otherwise
   */
 int _isalpha(int c)
 {
-if ((c >= 97 && c <= 122) || (c >=65 && c <= 98))
-{
+if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 return (1);
-}
 else
-{
 return (0);
 }
-_putchar('\n');
-}
-
-
