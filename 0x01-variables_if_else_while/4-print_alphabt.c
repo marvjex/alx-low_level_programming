@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
-  * main - Entry point of the program
+  * main - Entry point
   * Description 'returns alphabetical letters both except q and e'
-  * Returns: Always 0
+  * Return: Always 0 (Success)
   */
 int main(void)
 {
