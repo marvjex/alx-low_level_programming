@@ -8,8 +8,6 @@
 int mul(int a, int b)
 
 {
-int product = 0;
-for (; b != 0; b--)
-product += a;
-return (product);
+int mul(int a, int b)
+return (a * b);
 }
