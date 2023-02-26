@@ -5,12 +5,13 @@
  */
 int main(void)
 {
-char c;
+int c;
 
-for (c = 'z'; c >= 'a'; c--)
+for (c = 122; c >= 97; c--)
 {
 _putchar(c);
 }
 _putchar('\n');
+
 return (0);
 }
