@@ -8,6 +8,13 @@
 int mul(int a, int b)
 
 {
-int mul(int a, int b)
-return (a * b);
+int result = 0;
+while (b)
+{
+if (b & 1)
+result += a;
+a <<= 1;
+b >>= 1;
+}
+return (result);
 }
