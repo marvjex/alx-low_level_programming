@@ -1,27 +1,22 @@
+#include "main.h"
 /**
- * cap_string - capitalizes all words of a string
- * @s: string to capitalize
- *
- * Return: pointer to the resulting string
- */
+  * cap_string - Capitalizes all words of a string.
+  * @s: The string to be capitalized.
+  * Return: A pointer to the capitalized string.
+  */
 char *cap_string(char *s)
 {
-char separators[] = " \t\n,;.!?\"(){}";
-int i, j;
+int i = 0;
 
-for (i = 0; s[i] != '\0'; i++)
+while (s[i] != '\0')
 {
-if (i == 0 || s[i - 1] == '\0' ||
-strchr(separators, s[i - 1]) != NULL)
-{
-if (s[i] >= 'a' && s[i] <= 'z')
-s[i] -= 'a' - 'A';
-}
-else
-{
-if (s[i] >= 'A' && s[i] <= 'Z')
-s[i] += 'a' - 'A';
-}
+if (i == 0 || s[i - 1] == ' ' || s[i - 1] == '\t' || s[i - 1] == '\n'
+|| s[i - 1] == ',' || s[i - 1] == ';' || s[i - 1] == '.'
+|| s[i - 1] == '!' || s[i - 1] == '?' || s[i - 1] == '"'
+|| s[i - 1] == '(' || s[i - 1] == ')' || s[i - 1] == '{'
+|| s[i - 1] == '}')
+s[i] = (s[i] >= 'a' && s[i] <= 'z') ? s[i] - 32 : s[i];
+i++;
 }
 
 return (s);
